@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Listing(props) {
     const { items } = props;
@@ -25,3 +26,7 @@ export default function Listing(props) {
         </div> 
     )
 }
+
+Listing.propTypes = {
+    count: PropTypes.array
+};
